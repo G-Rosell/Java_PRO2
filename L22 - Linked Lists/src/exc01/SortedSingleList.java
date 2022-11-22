@@ -2,7 +2,7 @@ package exc01;
 
 import java.util.NoSuchElementException;
 
-public class CitySortedSingleList {
+public class SortedSingleList {
     private Node first;
 
     /**
@@ -67,46 +67,52 @@ public class CitySortedSingleList {
      * Removes the element in the list.
      */
     public boolean remove(String element) {
-        boolean removed = false;
 
-        if (first == null) {
-            throw new NoSuchElementException();
+        if (first == null) { // guard
+           return false;
         }
 
-        if (first.element.equals(element)) {
-            first = first.next;
-            removed = true;
+        if (first.next == null) { // guard
+            first = null;
+            return true;
         }
+
         Node node = first;
-        while (node.next != null && !node.next.equals(element)) {
+        while (node.next != null) {
+            if (node.next.next == null) {
+                node.next = null;
+                return true;
+            }
             node = node.next;
-            node.next = null;
-            removed = true;
         }
-        return removed;
+        return false;
     }
 
 
     /**
-     * Prints the number of elements in the list.
+     * Prints all elements in alphabetical order
      */
     public void printElements() {
-        Node node = first;
         if (first == null) {
-            throw new NoSuchElementException();
+            System.out.println("Empty list");
+            return;
         }
-        System.out.println(node.element);
+        Node node = first;
         while (node.next != null) {
-            node = node.next;
             System.out.println(node.element);
+            node = node.next;
         }
     }
 
     /**
-     * Return the number of ?? in the list.
+     * Return the number of elements in the list.
      */
     public int count() {
         int count = 0;
+        if (first == null) {
+            return 0;
+        }
+
         Node node = first;
         while (node != null) {
             count++;

@@ -84,15 +84,43 @@ public class CitySingleLinkedList {
         }
     }
 
-    //-----------------------------------------------------
+    /** Count the total amount of inhabitants of the cities from the list
+     * */
+    public int totalInhabitants() {
+        if (first == null) {
+            throw new NoSuchElementException();
+        }
+        int inhabitants = getFirst().getInhabitants();
+        Node node = first;
+        while (node.next != null) {
+            node = node.next;
+            inhabitants += node.city.getInhabitants();
+        }
+        return inhabitants;
+    }
 
+    @Override
+    public String toString() {
+        Node node = first;
+        StringBuilder sb = new StringBuilder("[");
+        while (node != null) {
+            sb.append(node.city).append(", ");
+            node = node.next;
+        }
+        sb.append("]");
+        return sb.toString();
+    }
+
+    //-----------------------------------------------------
     private static class Node {
         private final City city;
-        private Node next;
 
+        private Node next;
         public Node(City city) {
             this.city = city;
             this.next = null;
         }
+
     }
+
 }

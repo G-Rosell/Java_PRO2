@@ -16,13 +16,19 @@ public class CitySingleLinkedListDemo {
         list.addFirst(amsterdam);
         list.addFirst(paris);
 
+        System.out.println(list);
         System.out.println("COUNT: " + list.count());
         System.out.println();
 
         list.removeCity(rom);
         list.removeFirst();
 
+        System.out.println(list);
         System.out.println("COUNT: " + list.count());
+        System.out.println();
+
+        System.out.println(list);
+        System.out.println("Total Inhabitants: " + list.totalInhabitants());
         System.out.println();
     }
 }

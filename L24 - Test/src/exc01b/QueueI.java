@@ -1,4 +1,4 @@
-package ex01b;
+package exc01b;
 
 public interface QueueI<E> {
 

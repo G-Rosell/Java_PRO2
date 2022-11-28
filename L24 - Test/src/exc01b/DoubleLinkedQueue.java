@@ -1,4 +1,4 @@
-package ex01b;
+package exc01b;
 
 public class DoubleLinkedQueue<E> implements QueueI<E> {
 

@@ -1,4 +1,4 @@
-package ex1astudent;
+package exc01a;
 
 public interface QueueI<E> {
 
@@ -33,5 +33,4 @@ public interface QueueI<E> {
      * Return the number of elements in the queue.
      */
     public int size();
-
 }

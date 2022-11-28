@@ -1,5 +1,4 @@
-package ex1astudent;
-
+package exc01a;
 
 public class app {
 

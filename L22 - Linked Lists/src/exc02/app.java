@@ -1,5 +1,7 @@
 package exc02;
 
+import java.util.function.Predicate;
+
 public class app {
 
     public static void main(String[] args) {
@@ -24,8 +26,27 @@ public class app {
         list.add(oslo);
         list.add(ko);
 
-
         list.printElements();
+        System.out.println();
+        System.out.println("Count: " + list.count());
+        System.out.println();
+        System.out.println("--------------");
+        System.out.println();
+
+        // Remove last og remove virker ikke
+
+        System.out.println("Remove last:");
+        System.out.println(list.removeLast());
+        list.printElements();
+
+
+        System.out.println("Remove ko:");
+        System.out.println();
+        list.remove(ko);
+        list.printElements();
+        System.out.println("shits not working");
+
+
 
 
     }

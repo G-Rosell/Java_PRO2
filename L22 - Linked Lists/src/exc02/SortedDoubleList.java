@@ -22,29 +22,31 @@ public class SortedDoubleList {
     public void add(String element) {
         Node newNode = new Node(element);
         if (header.next == trailer) { // sentinel // list is empty
-            newNode.next = header.next;
-            newNode.prev = header;
             header.next = newNode;
+            newNode.next = trailer;
             trailer.prev = newNode;
+            newNode.prev = header;
             return;
         }
 
         Node node = header.next;
 
         if (node.data.compareTo(element) > 0) {
+            node.prev.next = newNode;
+            newNode.prev = node.prev;
             newNode.next = node;
-            header.next = newNode;
+            node.prev = newNode;
             return;
         }
 
-        if (node.next == trailer) {
-            if (node.data.compareTo(element) < 0) {
-                node.next = newNode;
-            } else if (node.data.compareTo(element) >= 0) {
-                newNode.next = node;
-                node.prev = newNode;
-            }
+        while (node != trailer && node.data.compareTo(element) <= 0) {
+            node = node.next;
         }
+        newNode.prev = node.prev;
+        newNode.next = node;
+        node.prev.next = newNode;
+        node.prev = newNode;
+
     }
 
     /**
@@ -76,13 +78,18 @@ public class SortedDoubleList {
      */
 
     public boolean removeLast(){
-        if(trailer.prev != header){
-            trailer.prev = trailer.prev.prev;
-            trailer.prev.next = trailer;
-            return true;
+        Node remove = header.next;
+        while (remove != trailer) {
+            if (remove.next == trailer) {
+                remove.next.prev = remove.prev;
+                remove.prev.next = trailer;
+                return true;
+            }
+            remove = remove.next;
         }
         return false;
     }
+
 
     /**
      * Print all elements in alphabetical order.

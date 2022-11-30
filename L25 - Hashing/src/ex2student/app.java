@@ -34,6 +34,7 @@ public class app {
         System.out.println("Contains 2: " + hashSetSC.contains(2));
         System.out.println("Contains 3: " + hashSetSC.contains(3));
         System.out.println("Contains 4: " + hashSetSC.contains(4));
+        System.out.println(hashSetSC);
 
 
         System.out.println("--------------------Testing method; size:------------------------");

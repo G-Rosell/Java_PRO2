@@ -1,11 +1,12 @@
 package ex2student;
 
 import java.lang.reflect.Array;
+import java.util.HashSet;
+
 
 public class app {
     public static void main(String[] args) {
         HashSetSC hashSetSC = new HashSetSC<>(7);
-
 //      double tal = 1;
 //        for (double i = 0.1; i <= tal; i++) {
 //            hashSetSC.add(i);

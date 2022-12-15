@@ -8,7 +8,7 @@ public class app {
         Common c1 = new Common();
         Semaphore s = new Semaphore(1);
 
-        Thread bagerDame = new ThreadClassBaker(c1,"Bagerdame", s);
+        Thread bagerMakker = new ThreadClassBaker(c1,"BagerMakker", s);
         Thread t1 = new ThreadClassArrival(c1, "Makker 1",s);
         Thread t2 = new ThreadClassArrival(c1, "Næste makker",s);
 
@@ -16,11 +16,11 @@ public class app {
 
         t1.start();
         t2.start();
-        bagerDame.start();
+        bagerMakker.start();
 
         long startTime = System.nanoTime();
         try {
-            t1.join(); t2.join(); bagerDame.join();
+            t1.join(); t2.join(); bagerMakker.join();
         } catch (InterruptedException e){
             throw new InterruptedException();
         }

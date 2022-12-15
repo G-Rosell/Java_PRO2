@@ -5,7 +5,7 @@ public class app {
     public static void main(String[] args) throws InterruptedException {
         Common c1 = new Common();
 
-        Thread bagerDame = new ThreadClassBaker(c1,"Bagerdame");
+        Thread bagerMakker = new ThreadClassBaker(c1,"BagerMakker");
         Thread t1 = new ThreadClassArrival(c1, "Makker 1",1,0);
         Thread t2 = new ThreadClassArrival(c1, "Næste makker",0,1);
 
@@ -13,11 +13,11 @@ public class app {
 
         t1.start();
         t2.start();
-        bagerDame.start();
+        bagerMakker.start();
 
         long startTime = System.nanoTime();
         try {
-            t1.join(); t2.join(); bagerDame.join();
+            t1.join(); t2.join(); bagerMakker.join();
         } catch (InterruptedException e){
             throw new InterruptedException();
         }

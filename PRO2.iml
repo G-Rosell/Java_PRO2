@@ -6,6 +6,12 @@
       <sourceFolder url="file://$MODULE_DIR$/ExamExtra/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/daosAflevering/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/L28 - Binary Search Trees" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/proAflevering" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/L01 - Java Collections Framework" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/L02 - Lambda Funktioner" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/L03 - GIT" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/L13 - Observer - Adapter" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />

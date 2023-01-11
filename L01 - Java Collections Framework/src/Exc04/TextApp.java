@@ -1,4 +1,4 @@
-package Exc04;
+package src.Exc04;
 
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -8,7 +8,7 @@ public class TextApp {
 
     public static void main(String[] args) throws FileNotFoundException {
 
-        String filename = "L01/src/Exc04/Text/";
+        String filename = "L01 - Java Collections Framework/src/Exc04/Text/";
         File in = new File(filename);
         try (Scanner scanner = new Scanner(in)) {
             scanner.useDelimiter("[^\\wæøåÆØÅ]+");

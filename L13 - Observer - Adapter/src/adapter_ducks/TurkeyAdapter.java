@@ -1,4 +1,4 @@
-package adapter_ducks;
+package src.adapter_ducks;
 
 // Turkey is the adaptee.
 public class TurkeyAdapter implements Duck {

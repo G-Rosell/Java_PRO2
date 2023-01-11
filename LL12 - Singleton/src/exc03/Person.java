@@ -1,9 +1,9 @@
-package src.observer_ex3student;
+package exc03;
 
-public class Customer {
-    private final String name;
+public class Person {
+    private String name;
 
-    public Customer(String name) {
+    public Person(String name) {
         this.name = name;
     }
 

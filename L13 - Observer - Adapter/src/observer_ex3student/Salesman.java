@@ -1,4 +1,4 @@
-package observer_ex3student;
+package src.observer_ex3student;
 
 public class Salesman {
     private final String name;

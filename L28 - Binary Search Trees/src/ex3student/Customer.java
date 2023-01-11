@@ -1,4 +1,4 @@
-package ex3student;
+package src.ex3student;
 
 public class Customer {
     private final String phoneNo;

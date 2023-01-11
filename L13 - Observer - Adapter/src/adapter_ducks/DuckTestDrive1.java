@@ -1,4 +1,4 @@
-package adapter_ducks;
+package src.adapter_ducks;
 
 import java.util.ArrayList;
 import java.util.List;

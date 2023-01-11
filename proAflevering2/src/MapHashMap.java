@@ -1,4 +1,4 @@
-package ex3student;
+import ex3student.MapI;
 
 import java.util.*;
 
@@ -44,6 +44,8 @@ public class MapHashMap<K, V> implements MapI<K, V> {
      */
     @Override
     public V get(K key) {
+        // TODO
+
         int h = hash(key);
         for (Map.Entry<K, V> entry : table[h].entrySet()) {
             if (entry.getKey() == key) {
@@ -60,6 +62,8 @@ public class MapHashMap<K, V> implements MapI<K, V> {
      */
     @Override
     public V put(K key, V value) {
+        // TODO
+
         int h = hash(key);
         V v = table[h].get(key);
         table[h].put(key,value);
@@ -74,6 +78,8 @@ public class MapHashMap<K, V> implements MapI<K, V> {
      */
     @Override
     public V remove(K key) {
+        // TODO
+
         int h = hash(key);
         V v = table[h].get(key);
         table[h].remove(key,get(key));
@@ -87,6 +93,8 @@ public class MapHashMap<K, V> implements MapI<K, V> {
     @Override
     public Set<K> keys() {
         Set<K> keys = new LinkedHashSet<>();
+        // TODO
+
         for (int i = 0; i < table.length; i++) {
             keys.addAll(table[i].keySet());
         }
@@ -98,6 +106,8 @@ public class MapHashMap<K, V> implements MapI<K, V> {
      */
     @Override
     public List<V> values() {
+        // TODO
+
         List<V> values = new ArrayList<>();
         for (int i = 0; i < table.length; i++) {
             values.addAll(table[i].values());
@@ -110,6 +120,7 @@ public class MapHashMap<K, V> implements MapI<K, V> {
      */
     @Override
     public int size() {
+        // TODO
         return size;
     }
 

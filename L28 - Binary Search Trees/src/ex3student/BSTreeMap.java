@@ -1,4 +1,4 @@
-package ex3student;
+package src.ex3student;
 
 import java.util.LinkedHashSet;
 import java.util.LinkedList;

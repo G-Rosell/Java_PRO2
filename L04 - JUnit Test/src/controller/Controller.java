@@ -1,8 +1,10 @@
-package controller;
+package src.controller;
 
-import model.Student;
-import model.Team;
-import storage.Storage;
+
+import src.model.Student;
+import src.model.Team;
+import src.storage.Storage;
+
 
 public abstract class Controller {
     private static Storage storage;

@@ -1,7 +1,6 @@
 package src.ex3student;
 
-import ex3student.BSTreeMap;
-import ex3student.MapI;
+
 
 public class Ex3App {
 

@@ -171,27 +171,54 @@ public class binaryTree<E> {
             System.out.print(root.data + " ");
         }
     }
-
-    public void printLevelOrder() {
-        if (root == null) {
-            return;
-        }
-        Queue<Node> queue = new LinkedList<>();
-        queue.add(root);
-
-        while (!queue.isEmpty()) {
-            Node popped = queue.poll();
-            System.out.print(popped.data + " ");
-
-            if (popped.left != null) {
-                queue.add(popped.left);
-            }
-
-            if (popped.right != null) {
-                queue.add(popped.right);
-            }
-        }
-    }
+////
+//    public void printLevelOrder() {
+//        if (root == null) {
+//            return;
+//        }
+//        Queue<Node> queue = new LinkedList<>();
+//        queue.add(root);
+//
+//        while (!queue.isEmpty()) {
+//            Node popped = queue.poll();
+//            System.out.print(popped.data + " ");
+//
+//            if (popped.left != null) {
+//                queue.add(popped.left);
+//            }
+//
+//            if (popped.right != null) {
+//                queue.add(popped.right);
+//            }
+//        }
+//    }
+//
+//
+//    /*
+//    Private helpermethod for recursively calling printLevelOrder
+//     */
+//    private void printGivenLevel(Node n, int level){
+//        if (n == null){
+//            return;
+//        }
+//        if (level == 1){
+//            System.out.println(n.data);;
+//        }
+//        else if (level > 1){
+//            printGivenLevel(n.left,level-1);
+//            printGivenLevel(n.right,level-1);
+//        }
+//    }
+//
+//    /* Public method for printing the level order
+////     */
+//
+//    public void printLevelOrder(){
+//        int h = height(root);
+//        for (int i = 0; i <= h; i++) {
+//            printGivenLevel(root,i);
+//        }
+//    }
 
     //-------------------------------------------------------------------------
 

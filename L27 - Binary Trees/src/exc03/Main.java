@@ -1,6 +1,6 @@
 package exc03;
 
-public class app {
+public class Main {
 
     public static void main(String[] args) {
         IntBinaryTree t25 = new IntBinaryTree(25);

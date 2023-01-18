@@ -1,6 +1,6 @@
 package exc02;
 
-public class app {
+public class Main {
     public static void main(String[] args) {
         binaryTree<Integer> t25 = new binaryTree<>(25);
         binaryTree<Integer> t30 = new binaryTree<>(30, t25, null);
@@ -29,7 +29,7 @@ public class app {
         System.out.println();
         t45.printPostorder();
         System.out.println();
-        t45.printLevelOrder();
+        // t45.printLevelOrder();
         System.out.println();
         System.out.println(t45.listInorder());
     }

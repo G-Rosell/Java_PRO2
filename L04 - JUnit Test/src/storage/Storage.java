@@ -1,7 +1,7 @@
-package storage;
+package src.storage;
 
-import model.Student;
-import model.Team;
+import src.model.Student;
+import src.model.Team;
 
 import java.util.HashSet;
 import java.util.Set;

@@ -1,6 +1,6 @@
-package src.ex2student;
+package ex2student;
 
-public class app {
+public class testApp {
 
     public static void main(String[] args) {
         BSTreeSet tree = new BSTreeSet();

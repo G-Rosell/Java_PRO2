@@ -1,4 +1,4 @@
-package ex2student;
+package src.ex2student;
 
 /**
  * BSTreeSet implements a sorted set, sorted according to the elements' natural ordering.

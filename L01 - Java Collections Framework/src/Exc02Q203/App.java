@@ -1,4 +1,4 @@
-package Exc02Q203;
+package src.Exc02Q203;
 
 
 import Exc02Q202.College;
@@ -21,8 +21,8 @@ public class App {
 
         College c1 = new College("EAA");
 
-        c1.addStudent(s1);
-        c1.addStudent(s2);
+       // c1.addStudent(s1);
+        // c1.addStudent(s2);
 
         // Tester metoden calcAverage:
         System.out.println(c1.calcAverage());
@@ -30,7 +30,7 @@ public class App {
         System.out.println();
 
         //Tester metoden findStudent:
-        System.out.println(c1.findStudent(1234));
+       // System.out.println(c1.findStudent(1234));
 
 
 

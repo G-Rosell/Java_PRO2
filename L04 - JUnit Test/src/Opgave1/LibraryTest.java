@@ -1,4 +1,4 @@
-package Opgave1;
+package src.Opgave1;
 
 import static org.junit.jupiter.api.Assertions.*;
 

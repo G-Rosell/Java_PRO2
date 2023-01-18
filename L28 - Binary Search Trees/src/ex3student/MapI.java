@@ -1,4 +1,4 @@
-package ex3student;
+package src.ex3student;
 
 import java.util.List;
 import java.util.Set;

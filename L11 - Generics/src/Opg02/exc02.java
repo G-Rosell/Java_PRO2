@@ -36,8 +36,6 @@ public class exc02 {
         System.out.println("Add two sets to one set");
         System.out.println(addToOneSet(strings1,strings2,strings3));
         System.out.println(addToOneSet(ints1,ints2,ints3));
-
-
     }
 
     public static<E> HashSet<E> unionOfSets(HashSet<E> set1, HashSet<E> set2){
@@ -82,7 +80,4 @@ public class exc02 {
         set3.addAll(set2);
         return set3;
     }
-
-
-
 }

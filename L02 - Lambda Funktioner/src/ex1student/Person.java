@@ -1,4 +1,4 @@
-package ex1student;
+package src.ex1student;
 
 public class Person {
 	private String name;

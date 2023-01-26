@@ -1,4 +1,4 @@
-package ex4student;
+package src.ex4student;
 
 public class Runner {
 	private final String name; // not null

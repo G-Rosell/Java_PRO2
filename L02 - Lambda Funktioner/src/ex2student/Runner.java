@@ -1,4 +1,4 @@
-package ex2student;
+package src.ex2student;
 
 public class Runner {
 	private final String name; // not null

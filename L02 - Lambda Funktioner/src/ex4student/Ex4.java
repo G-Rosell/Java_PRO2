@@ -1,4 +1,4 @@
-package ex4student;
+package src.ex4student;
 
 import java.util.ArrayList;
 import java.util.List;

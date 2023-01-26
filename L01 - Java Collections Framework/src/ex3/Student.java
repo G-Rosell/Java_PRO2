@@ -1,4 +1,4 @@
-package ex3;
+package src.ex3;
 
 import java.util.ArrayList;
 import java.util.List;

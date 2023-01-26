@@ -1,4 +1,4 @@
-package ex3;
+package src.ex3;
 
 import java.util.Collections;
 import java.util.Comparator;
